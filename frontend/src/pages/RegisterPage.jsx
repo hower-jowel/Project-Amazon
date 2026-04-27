@@ -65,7 +65,7 @@ const RegisterPage = () => {
             <select className="form-select" value={role} onChange={e => setRole(e.target.value)}>
               <option value="buyer">Buyer — I want to shop</option>
               <option value="seller">Seller — I want to sell products</option>
-              <option value="admin">Admin (Temporary)</option>
+              {/* <option value="admin">Admin (Temporary)</option> */}
             </select>
 
             <button type="submit" className="btn-amazon" disabled={loading}>
