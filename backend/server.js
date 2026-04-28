@@ -17,10 +17,8 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use('/api/users', userRoutes);
 
-// Mount product route
 app.use('/api/products', productRoutes);
 
-// Mount order route
 app.use('/api/orders', orderRoutes);
 
 const PORT = process.env.PORT || 5000;
